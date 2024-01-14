@@ -1,0 +1,15 @@
+image: gitlab.dsi.universite-paris-saclay.fr:5005/l1infoinitiationsciencedonnees/computerlab/image:latest
+
+variables:
+  ASSIGNMENT: Semaine8
+  STUDENT: $CI_PROJECT_ROOT_NAMESPACE
+
+autograde:
+  script:
+    - intro-science-donnees student_autograde $ASSIGNMENT $STUDENT
+  artifacts:
+    paths:
+      - autograded
+      - feedback
+    # reports:
+    #   junit: feedback/scores.xml

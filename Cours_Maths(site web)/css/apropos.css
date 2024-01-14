@@ -1,0 +1,24 @@
+.article_view_container{
+width:60%;
+margin:auto;
+padding-top:20px;
+}
+.article_view-title{
+padding-top:100px;
+font-family: 'Nunito Sans', sans-serif;
+border-bottom: 3px solid  #e1b12c; 
+line-height:40px;
+}
+.article_view-content{
+font-family: 'Nunito Sans', sans-serif;
+padding-top:10px;
+text-align:justify;
+}
+
+@media only screen and (max-width:1000px) {
+.article_view_container{
+width:85%;
+margin:auto;
+padding-top:20px;
+}
+} 

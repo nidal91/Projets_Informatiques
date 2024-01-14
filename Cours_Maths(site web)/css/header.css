@@ -1,0 +1,130 @@
+.header {
+height: 450px;
+position: relative;
+background: rgb(62,57,107);
+position: relative
+}
+ .header__other-page{
+ height:350px;
+ }
+ 
+ .header__texture{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;left: 0;
+ background: url('../Img/image.jpg') center no-repeat;
+ background-size: cover;
+ z-index: 1;
+ opacity: 0.5;
+ }
+ 
+
+ 
+.header__navbar {
+width: 100%;
+height: 100px;
+display :flex;
+flex-direction: row;
+justify-content : space-between;
+align-items: center;
+}
+
+
+.header__navbar--logo-title{
+color: #fff;
+font-size : 32px;
+} 
+
+.header__navbar--menu-link {
+font-size:18px;
+margin-left : 40px;
+color:#fff;
+text-decoration: none;
+}
+ 
+.header__slogan {
+text-align: center ;
+margin-top:80px;
+}
+
+.h__slogan--title{
+color:#fff;
+font-size:35px;
+text-transform: uppercase;
+font-family: font-family: 'Nunito Sans', sans-serif;
+} 
+
+
+
+.h__slogan--btn{
+top:25px;
+color:#fff;
+top: 50px;
+text-decoration :none;
+padding: 15px 20px; 
+background: #e1b12c; 
+border-radius: 4px;
+cursor:pointer; 
+}
+
+
+
+
+.header__navbar-toggle {
+width: 40px;
+height: 60px;
+display:flex;
+align-items: center;
+display:none; 
+cursor:pointer; 
+} 
+
+.header__navbar-toggle-icons, .header__navbar-toggle-icons:before, .header__navbar-toggle-icons:after {
+content: ""; 
+display: block;
+width:100%;
+height: 3px;
+border-radius: 5px;
+background: #fff;
+position:relative;
+z-index:1000; 
+}
+
+.header__navbar-toggle-icons:before {top: 10px}
+.header__navbar-toggle-icons:after {top: -14px} 
+
+.is-open .header__navbar--menu {
+transform: translateY(0); 
+}
+
+@media only screen and (max-width:  1110px) {
+.container {
+	width:100%;
+	padding:20px;
+	} 
+.header__navbar-toggle {
+	display: flex;
+	}
+		.header__navbar--menu {
+			transform: translateY(-100%); 
+			transition: all 0.3s ease-in-out;
+			display:flex; 
+			flex-direction: column;
+			justify-content: center;
+			align-items:center;
+			position:absolute;
+			z-index: 1000;
+			width: 100vw; 
+			height:  58vh; 
+			background:#e1b12c;
+			top: 0;left: 0;
+		}
+
+.header__navbar--menu-link{
+margin: 20px 0;
+font-size: 24px; 
+}
+}
+
+

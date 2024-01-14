@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #5c6bc0;
+    color: #fff;
+    text-align: right;
+    padding: 1rem;
+}
+
+header button {
+    background-color: #7e88c3;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    background-color: #f6f6f6;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #5c6bc0;
+    padding: 0.5rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#quiz {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #5c6bc0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+#quizQuestion {
+    color: #fff;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #f0f0f0;
+}
+
+body.dark-mode header {
+    background-color: #34495e;
+}
+
+body.dark-mode form,
+body.dark-mode #quiz {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode fieldset {
+    background-color: #444;
+}
+
+body.dark-mode legend {
+    color: #7e88c3;
+}
+
+body.dark-mode input {
+    background-color: #555;
+    color: #f0f0f0;
+}
+
+body.dark-mode td {
+    border-color: #444;
+}
